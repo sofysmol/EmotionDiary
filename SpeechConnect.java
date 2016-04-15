@@ -37,35 +37,34 @@ public class SpeechConnect {
     }
 
     public void requestTextOnWatsonBySpeech(String filepath) throws JSONException {
-        service = new SpeechToText();
-        service.setUsernameAndPassword(username, password);
-        service.setEndPoint("https://stream.watsonplatform.net/speech-to-text/api");
+        service = new SpeechToText();                                                 //
+        service.setUsernameAndPassword(username, password);                           // устанавливаем необходимые данные для отправки
+        service.setEndPoint("https://stream.watsonplatform.net/speech-to-text/api");  //
 
-        RecognizeOptions options = new RecognizeOptions().contentType("audio/wav")
+        RecognizeOptions options = new RecognizeOptions().contentType("audio/wav")      //выставляем необходмые параметры для получения текста
                 .continuous(true).interimResults(true);
 
-        //String filepath = Environment.getExternalStorageDirectory().getPath() + "/Download/1460663190593.wav";
 
         try {
-            service.recognizeUsingWebSockets(new FileInputStream(filepath),
+            service.recognizeUsingWebSockets(new FileInputStream(filepath),  // передаем нашу аудиозапись
                     options, new BaseRecognizeDelegate()
                     {
                         @Override
-                        public void onMessage(SpeechResults speechResults) {
-                            text = speechResults.toString();
-
+                        public void onMessage(SpeechResults speechResults) {   // при получении сообщения от Watson пишем в переменную text,
+                            text = speechResults.toString();                   // но так как нам нужна конечное сообщение, то не добавляем новые данные(т.е. не text += ..)
+                                                                               // onMessage - стандартная функция
                         }
 
                         @Override
-                        public void onDisconnected()
+                        public void onDisconnected()        // при разрыве соединения
                         {
                             try {
-                                JSONObject resultSpeechToText = new JSONObject(text);
-                                resultSpeechToText = resultSpeechToText.getJSONArray("results").getJSONObject(0);
-                                resultSpeechToText = resultSpeechToText.getJSONArray("alternatives").getJSONObject(0);
-                                text = resultSpeechToText.getString("transcript");
-                                Message message = handler.obtainMessage(0, text);
-                                handler.sendMessage(message);
+                                JSONObject resultSpeechToText = new JSONObject(text);   // создаем JSON объект
+                                resultSpeechToText = resultSpeechToText.getJSONArray("results").getJSONObject(0);   // парсим наше текс
+                                resultSpeechToText = resultSpeechToText.getJSONArray("alternatives").getJSONObject(0);  // P.S. да, в одну строчку не получается делать =(, ругается.
+                                text = resultSpeechToText.getString("transcript"); // готовое сообщение
+                                Message message = handler.obtainMessage(0, text);   // передаем сообещние в поток UI
+                                handler.sendMessage(message);                       //
                             } catch (org.json.JSONException e){
                                 e.printStackTrace();
                             }
@@ -75,17 +74,16 @@ public class SpeechConnect {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-//27649
     }
 
 
     public void runRequestServiceSpeechToText(final String filepath) {
-        threadtospeech = new Thread(new Runnable() {
+        threadtospeech = new Thread(new Runnable() {  //создаем новый поток
             @Override
             public void run() {
                 try
                 {
-                    requestTextOnWatsonBySpeech(filepath);
+                    requestTextOnWatsonBySpeech(filepath); //запускаем основной алгоритм
 
                 } catch (JSONException e)
                 {
