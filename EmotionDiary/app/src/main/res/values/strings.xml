@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EmotionDiary</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="toolbar_diary_title">Diary</string>
+    <string name="toolbar_new_card">New Card</string>
+    <string name="title_new_card">Title</string>
+    <string name="date_new_card">Date</string>
+    <string name="story_new_card">Story</string>
+    <string name="nav_item1">Diary</string>
+    <string name="nav_item2">Personal Analize</string>
+    <string name="nav_item3">My Mood</string>
+
+</resources>

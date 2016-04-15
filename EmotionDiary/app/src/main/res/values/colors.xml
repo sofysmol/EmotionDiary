@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5722</color>
+    <color name="colorPrimaryDark">#ea410b</color>
+    <color name="colorAccent">#ff5722</color>
+    <color name="colorHappy">#ffda00</color>
+    <color name="colorGood">#77ff04</color>
+    <color name="colorBad">#2d23ad</color>
+    <color name="colorSeleced">#72c4bc</color>
+    <color name="colorNotSeleced">#777777</color>
+    <color name="colorTextH1">#ffffff</color>
+    <color name="colorBackground">#ebebeb</color>
+    <color name="colorTextBody">#b1b1b1</color>
+    <color name="colorTitleH3">#72c4bc</color>
+    <color name="colorTitleH2">#000000</color>
+</resources>

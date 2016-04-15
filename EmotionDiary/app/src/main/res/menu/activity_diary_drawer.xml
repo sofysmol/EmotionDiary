@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_diary"
+            android:icon="@drawable/ic_book_open_page_variant_grey600_24dp"
+            android:title="Diary"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_personal_analysis"
+            android:icon="@drawable/ic_account_circle"
+            android:title="Personal Analysis"
+            android:checked="false"/>
+        <item
+            android:id="@+id/nav_mood"
+            android:icon="@drawable/ic_flower_grey600_24dp"
+            android:title="My Mood"
+            android:checked="false"/>
+    </group>
+
+</menu>
