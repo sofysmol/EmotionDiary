@@ -3,4 +3,5 @@
     <string name="start_read">Click on me to start recording</string>
     <string name="stop_read">Click on me to stop recording</string>
     <string name="filepath">Here is the path to the file in wav format</string>
+    <string name="wait_analyzer">Wait! I think!</string>
 </resources>
