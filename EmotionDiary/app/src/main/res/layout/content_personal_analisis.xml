@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -17,16 +17,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_marginBottom="0dp"
         android:id="@+id/new_page">
 
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-
-
             android:paddingRight="@dimen/card_diary_padding"
-
             >
 
             <TextView
@@ -38,9 +39,12 @@
                 android:textSize="35sp"
                 android:layout_marginLeft="100dp">
             </TextView>
-
-            <TextView
-                android:id="@+id/agreeabl"
+<!--agreeabl -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                android:id="@+id/agreeabl_text"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_margin="10dp"
@@ -48,10 +52,18 @@
                 android:textSize="20sp"
                 android:layout_marginLeft="100dp">
             </TextView>
+                <Button
+                    android:id="@+id/agreeabl_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_chevron_down_grey600_18dp"/>
+            </LinearLayout>
 
             <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/agreeabl"
                 app:dsb_min="0"
                 app:dsb_max="100"
                 app:dsb_value="50"
@@ -61,13 +73,231 @@
                 app:dsb_indicatorColor="@color/progressColor"
                 android:isScrollContainer="false"
                 android:clickable="false"
-                android:cursorVisible="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
                 />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:id="@+id/agreeabl_plus">
+                <TextView
+                    android:id="@+id/agreeabl_sympath_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    android:text="@string/agreeabl_sympathy"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="100dp">
+                </TextView>
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agreeabl_sympath"
+                    app:dsb_min="0"
+                    app:dsb_max="100"
+                    app:dsb_value="50"
+                    app:dsb_allowTrackClickToDrag="false"
+                    app:dsb_progressColor="@color/progressColor"
+                    app:dsb_trackColor="@color/trackColor"
+                    app:dsb_indicatorColor="@color/progressColor"
+                    android:clickable="false"
+                    />
 
+                <TextView
+                    android:id="@+id/agreeabl_altruism_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    android:text="@string/agreeabl_altruism"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="100dp">
+                </TextView>
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agreeabl_altruism"
+                    app:dsb_min="0"
+                    app:dsb_max="100"
+                    app:dsb_value="50"
+                    app:dsb_allowTrackClickToDrag="false"
+                    app:dsb_progressColor="@color/progressColor"
+                    app:dsb_trackColor="@color/trackColor"
+                    app:dsb_indicatorColor="@color/progressColor"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/agreeabl_uncompromising_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    android:text="@string/agreeabl_uncompromising"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="100dp">
+                </TextView>
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agreeabl_uncompromising"
+                    app:dsb_min="0"
+                    app:dsb_max="100"
+                    app:dsb_value="50"
+                    app:dsb_allowTrackClickToDrag="false"
+                    app:dsb_progressColor="@color/progressColor"
+                    app:dsb_trackColor="@color/trackColor"
+                    app:dsb_indicatorColor="@color/progressColor"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/agreeabl_trust_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    android:text="@string/agreeabl_trust"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="100dp">
+                </TextView>
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agreeabl_trust"
+                    app:dsb_min="0"
+                    app:dsb_max="100"
+                    app:dsb_value="50"
+                    app:dsb_allowTrackClickToDrag="false"
+                    app:dsb_progressColor="@color/progressColor"
+                    app:dsb_trackColor="@color/trackColor"
+                    app:dsb_indicatorColor="@color/progressColor"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/agreeabl_cooperation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    android:text="@string/agreeabl_cooperation"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="100dp">
+                </TextView>
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agreeabl_cooperation"
+                    app:dsb_min="0"
+                    app:dsb_max="100"
+                    app:dsb_value="50"
+                    app:dsb_allowTrackClickToDrag="false"
+                    app:dsb_progressColor="@color/progressColor"
+                    app:dsb_trackColor="@color/trackColor"
+                    app:dsb_indicatorColor="@color/progressColor"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/agreeabl_modesty_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    android:text="@string/agreeabl_modesty"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="100dp">
+                </TextView>
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agreeabl_modesty"
+                    app:dsb_min="0"
+                    app:dsb_max="100"
+                    app:dsb_value="50"
+                    app:dsb_allowTrackClickToDrag="false"
+                    app:dsb_progressColor="@color/progressColor"
+                    app:dsb_trackColor="@color/trackColor"
+                    app:dsb_indicatorColor="@color/progressColor"
+                    android:clickable="false"
+                    />
+
+            </LinearLayout>
+
+
+<!--extr_text
+
+            <TextView
+                android:id="@+id/intr_extr_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:text="@string/personality_intr_extr"
+                android:textSize="20sp"
+                android:layout_marginLeft="100dp">
+            </TextView>
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/intr_extr"
+                app:dsb_min="0"
+                app:dsb_max="100"
+                app:dsb_value="50"
+                app:dsb_allowTrackClickToDrag="false"
+                app:dsb_progressColor="@color/progressColor"
+                app:dsb_trackColor="@color/trackColor"
+                app:dsb_indicatorColor="@color/progressColor"
+                android:isScrollContainer="false"
+                android:clickable="false"
+                />
+
+            <TextView
+                android:id="@+id/openness_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:text="@string/personality_openness"
+                android:textSize="20sp"
+                android:layout_marginLeft="100dp">
+            </TextView>
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/openness"
+                app:dsb_min="0"
+                app:dsb_max="100"
+                app:dsb_value="50"
+                app:dsb_allowTrackClickToDrag="false"
+                app:dsb_progressColor="@color/progressColor"
+                app:dsb_trackColor="@color/trackColor"
+                app:dsb_indicatorColor="@color/progressColor"
+                android:isScrollContainer="false"
+                android:clickable="false"
+                />
+
+            <TextView
+                android:id="@+id/cons_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:text="@string/personality_cons"
+                android:textSize="20sp"
+                android:layout_marginLeft="100dp">
+            </TextView>
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cons"
+                app:dsb_min="0"
+                app:dsb_max="100"
+                app:dsb_value="50"
+                app:dsb_allowTrackClickToDrag="false"
+                app:dsb_progressColor="@color/progressColor"
+                app:dsb_trackColor="@color/trackColor"
+                app:dsb_indicatorColor="@color/progressColor"
+                android:isScrollContainer="false"
+                android:clickable="false"
+                />
+-->
         </LinearLayout>
+        </ScrollView>
     </android.support.v7.widget.CardView>
 
 </RelativeLayout>

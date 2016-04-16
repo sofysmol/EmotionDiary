@@ -12,7 +12,11 @@
             android:name=".Activity.DiaryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Activity.NewCardActivity"
@@ -22,15 +26,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sov.sofysmo.emotiondiary.Activity.DiaryActivity" />
         </activity>
-        <activity android:name=".Activity.PersonalAnalisesActivity"
-                android:label="@string/nav_item2"
-                android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity
+            android:name=".Activity.PersonalAnalisesActivity"
+            android:label="@string/nav_item2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activity.ReadActivity"
+            android:label="@string/title_activity_read"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

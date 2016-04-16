@@ -99,7 +99,8 @@ public class DiaryActivity extends AppCompatActivity
         if (id == R.id.nav_diary) {
             // Handle the camera action
         } else if (id == R.id.nav_personal_analysis) {
-
+            Intent intent = new Intent(this, PersonalAnalisesActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_mood) {
 
         }
