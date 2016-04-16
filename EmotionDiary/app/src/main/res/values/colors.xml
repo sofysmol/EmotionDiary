@@ -3,9 +3,9 @@
     <color name="colorPrimary">#ff5722</color>
     <color name="colorPrimaryDark">#ea410b</color>
     <color name="colorAccent">#ff5722</color>
-    <color name="colorHappy">#ffda00</color>
-    <color name="colorGood">#77ff04</color>
-    <color name="colorBad">#2d23ad</color>
+    <color name="colorHappy">#ffeb3b</color>
+    <color name="colorGood">#8bc34a</color>
+    <color name="colorBad">#607d8b</color>
     <color name="colorSeleced">#72c4bc</color>
     <color name="colorNotSeleced">#777777</color>
     <color name="colorTextH1">#ffffff</color>
@@ -15,5 +15,11 @@
     <color name="colorTitleH2">#000000</color>
     <color name="progressColor">#72c4bc</color>
     <color name="trackColor">#b1b1b1</color>
+    <!-- <color name="colorHappy">#ffda00</color>
+    <color name="colorGood">#77ff0</color>
+    <color name="colorBad">#2d23ad</color>
+    green #77ff0
+        blue #2d23ad
+        yellow #ffda00-->
 
 </resources>

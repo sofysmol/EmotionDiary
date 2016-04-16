@@ -31,6 +31,7 @@ public class NewCardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Drawable dr=view.getBackground();
+                //mFlaotsetBackgroundTintList(ColorStateList.valueOf(Color.Blue))
                // view.getDrawingCacheBackgroundColor();
                // view.setBackgroundColor(88);
 

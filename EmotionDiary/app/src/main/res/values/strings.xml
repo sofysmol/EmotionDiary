@@ -29,5 +29,6 @@
     <string name="agreeabl_trust">Trust</string>
     <string name="agreeabl_cooperation">Cooperation</string>
     <string name="agreeabl_modesty">Modesty</string>
-    <string name="title_activity_read">ReadActivity</string>
+
+    <string name="title_activity_read">Read</string>
 </resources>
