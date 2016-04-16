@@ -20,8 +20,9 @@
     <string name="title_personal_item1">Personality</string>
     <string name="personality_agreeabl">Agreeableness</string>
     <string name="personality_intr_extr">Introversion/Extraversion</string>
+    <string name="personality_emotional_range">Emotional range</string>
     <string name="personality_openness">Openness</string>
-    <string name="personality_cons">Conscientiousness</string>
+    <string name="personality_conscientiousness">Conscientiousness</string>
 
     <string name="agreeabl_sympathy">Sympathy</string>
     <string name="agreeabl_altruism">Altruism</string>
@@ -29,6 +30,35 @@
     <string name="agreeabl_trust">Trust</string>
     <string name="agreeabl_cooperation">Cooperation</string>
     <string name="agreeabl_modesty">Modesty</string>
+
+    <string name="intr_extr_assertiveness">Assertiveness</string>
+    <string name="intr_extr_outgoing">Outgoing</string>
+    <string name="intr_extr_activity_level">Activity level</string>
+    <string name="intr_extr_gregariousness">Gregariousness</string>
+    <string name="intr_extr_cooperation">Cooperation</string>
+    <string name="intr_extr_cheerfulness">Cheerfulness</string>
+    <string name="intr_extr_excitement_seeking">Excitement-seeking</string>
+
+    <string name="emotional_range_fiery">Fiery</string>
+    <string name="emotional_range_susceptible_to_stress">Susceptible to stress</string>
+    <string name="emotional_range_melancholy">Melancholy</string>
+    <string name="emotional_range_self_consciousness">Self-consciousness</string>
+    <string name="emotional_range_prone_to_worry">Prone to worry</string>
+    <string name="emotional_range_impulsiveness">Impulsiveness</string>
+
+    <string name="openness_intellect">Intellect</string>
+    <string name="openness_imagination">Imagination</string>
+    <string name="openness_adventurousness">Adventurousness</string>
+    <string name="openness_authority_challenging">Authority-challenging</string>
+    <string name="openness_emotionality">Emotionality</string>
+    <string name="openness_artistic_interests">Artistic interests</string>
+
+    <string name="conscientiousness_self_efficacy">Self-efficacy</string>
+    <string name="conscientiousness_cautiousness">Cautiousness</string>
+    <string name="conscientiousness_dutifulness">Dutifulness</string>
+    <string name="conscientiousness_achievement_striving">Achievement striving</string>
+    <string name="conscientiousness_orderliness">Orderliness</string>
+    <string name="conscientiousness_self_discipline">Self-discipline</string>
 
     <string name="title_activity_read">Read</string>
 </resources>
