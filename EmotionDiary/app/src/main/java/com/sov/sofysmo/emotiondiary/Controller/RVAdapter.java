@@ -85,8 +85,8 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PageViewHolder> {
         PageViewHolder(View itemView) {
             super(itemView);
             cv = (CardView)itemView.findViewById(R.id.cv);
-            pageDate = (TextView)itemView.findViewById(R.id.page_date);
-            pageContent = (TextView)itemView.findViewById(R.id.page_content);
+            pageDate = (TextView)itemView.findViewById(R.id.date_page);
+            pageContent = (TextView)itemView.findViewById(R.id.content_page);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

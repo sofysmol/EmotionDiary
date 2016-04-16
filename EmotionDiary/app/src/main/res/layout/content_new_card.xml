@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sov.sofysmo.emotiondiary.Activity.NewCardActivity"
+    tools:showIn="@layout/activity_new_card">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/new_page">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            android:paddingRight="@dimen/card_diary_padding"
+
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/title_new_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title_new_card"
+                    android:textSize="30sp"
+                    android:textColorHighlight="@color/colorTitleH3"
+                    android:lines="2"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+           <TextView
+               android:id="@+id/date_create"
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_margin="10dp"
+               android:text="@string/date_new_card"
+               android:textSize="20sp"
+               android:layout_marginLeft="100dp">
+            </TextView>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:scrollbars="vertical">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/story_new_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:hint="@string/story_new_card"
+                    android:textSize="20sp"
+                    android:textColorHighlight="@color/colorTitleH3"
+                    android:maxLines="6"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
