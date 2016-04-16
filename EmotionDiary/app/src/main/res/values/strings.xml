@@ -16,4 +16,10 @@
     <string name="nav_item3">My Mood</string>
     <string name="title_activity_new_card">New Card</string>
     <string name="title_back">Back</string>
+    
+    <string name="title_personal_item1">Personality</string>
+    <string name="personality_agreeabl">Agreeableness</string>
+    <string name="personality_intr_extr">Introversion/Extraversion</string>
+    <string name="personality_openness">Openness</string>
+    <string name="personality_cons">Conscientiousness</string>
 </resources>

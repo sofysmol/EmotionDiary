@@ -13,4 +13,7 @@
     <color name="colorTextBody">#b1b1b1</color>
     <color name="colorTitleH3">#72c4bc</color>
     <color name="colorTitleH2">#000000</color>
+    <color name="progressColor">#72c4bc</color>
+    <color name="trackColor">#b1b1b1</color>
+
 </resources>
