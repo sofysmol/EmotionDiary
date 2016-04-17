@@ -3,7 +3,7 @@
     <color name="colorPrimary">#ff5722</color>
     <color name="colorPrimaryDark">#ea410b</color>
     <color name="colorAccent">#ff5722</color>
-    <color name="colorHappy">#ffeb3b</color>
+    <color name="colorHappy">#eac857</color>
     <color name="colorGood">#8bc34a</color>
     <color name="colorBad">#607d8b</color>
     <color name="colorSeleced">#72c4bc</color>
@@ -15,6 +15,9 @@
     <color name="colorTitleH2">#000000</color>
     <color name="progressColor">#72c4bc</color>
     <color name="trackColor">#b1b1b1</color>
+    <color name="disgust">#321659</color>
+    <color name="fear">#16592c</color>
+    <color name="sadness">#4a92b6</color>
     <!-- <color name="colorHappy">#ffda00</color>
     <color name="colorGood">#77ff0</color>
     <color name="colorBad">#2d23ad</color>

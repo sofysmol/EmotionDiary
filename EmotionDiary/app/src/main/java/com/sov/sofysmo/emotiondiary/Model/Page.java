@@ -1,5 +1,7 @@
 package com.sov.sofysmo.emotiondiary.Model;
 
+import com.sov.sofysmo.emotiondiary.Utils.ToneAnalyz;
+
 import java.io.Serializable;
 
 /**
@@ -8,10 +10,14 @@ import java.io.Serializable;
 public class Page implements Serializable {
     public String title;
     public String date;
-    public String story;
-    Page(String title,String date, String story){
-        this.title=title;
-        this.date=date;
-        this.story=date;
+    public String text;
+    public MyToneScore tone;
+
+
+    public Page(String title, String date, String text, MyToneScore tone) {
+        this.title = title;
+        this.date = date;
+        this.text = text;
+        this.tone = tone;
     }
 }

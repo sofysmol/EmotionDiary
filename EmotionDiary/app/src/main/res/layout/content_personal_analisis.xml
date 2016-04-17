@@ -302,7 +302,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_margin="13dp"
-                        android:text="@string/intr_extr_cheerfulness"
+                        android:text="@string/intr_extr_gregariousness"
                         android:textSize="20sp"
                         android:layout_marginLeft="100dp">
                     </TextView>
@@ -513,7 +513,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_margin="13dp"
-                        android:text="@string/emotional_range_fiery"
+                        android:text="@string/emotional_range_susceptible_to_stress"
                         android:textSize="20sp"
                         android:layout_marginLeft="100dp">
                     </TextView>
@@ -724,7 +724,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_margin="13dp"
-                        android:text="@string/openness_intellect"
+                        android:text="@string/openness_imagination"
                         android:textSize="20sp"
                         android:layout_marginLeft="100dp">
                     </TextView>
@@ -913,7 +913,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_margin="13dp"
-                        android:text="@string/conscientiousness_cautiousness"
+                        android:text="@string/conscientiousness_self_efficacy"
                         android:textSize="20sp"
                         android:layout_marginLeft="100dp">
                     </TextView>

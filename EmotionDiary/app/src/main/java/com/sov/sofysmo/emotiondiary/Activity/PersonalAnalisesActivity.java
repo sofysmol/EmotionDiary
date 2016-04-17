@@ -118,8 +118,7 @@ public class PersonalAnalisesActivity extends AppCompatActivity
         };;
         personality = new PersonalityConnect("47c494e1-40b4-4f7b-9dfc-aa6d744a7480", "KMCFyQeEK4BN");
         personality.setHandler(handlerPersonality);
-        String myProfile = "Call me Ishmael. Some years ago-never mind how long precisely-having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off-then, I account it high time to get to sea as soon as I can.";
-        personality.runRequestServiceSpeechToText(myProfile);
+           personality.runRequestServiceSpeechToText(getIntent().getStringExtra("Text"));
 
 
     }
@@ -168,10 +167,10 @@ public class PersonalAnalisesActivity extends AppCompatActivity
         List<Trait> children=openinness.getChildren();
         ((DiscreteSeekBar) findViewById(R.id.openness_adventurousness)).setProgress((int)(children.get(0).getPercentage()*100));
         ((DiscreteSeekBar) findViewById(R.id.openness_artistic_interests)).setProgress((int)(children.get(1).getPercentage()*100));
-        ((DiscreteSeekBar) findViewById(R.id.openness_emotionality)).setProgress((int)(children.get(3).getPercentage()*100));
-        ((DiscreteSeekBar) findViewById(R.id.openness_imagination)).setProgress((int)(children.get(4).getPercentage()*100));
-        ((DiscreteSeekBar) findViewById(R.id.openness_intellect)).setProgress((int)(children.get(5).getPercentage()*100));
-        ((DiscreteSeekBar) findViewById(R.id.openness_authority_challenging)).setProgress((int)(children.get(6).getPercentage()*100));
+        ((DiscreteSeekBar) findViewById(R.id.openness_emotionality)).setProgress((int)(children.get(2).getPercentage()*100));
+        ((DiscreteSeekBar) findViewById(R.id.openness_imagination)).setProgress((int)(children.get(3).getPercentage()*100));
+        ((DiscreteSeekBar) findViewById(R.id.openness_intellect)).setProgress((int)(children.get(4).getPercentage()*100));
+        ((DiscreteSeekBar) findViewById(R.id.openness_authority_challenging)).setProgress((int)(children.get(5).getPercentage()*100));
     }
     private void initConscientiousness(Trait openinness)
     {
@@ -191,7 +190,7 @@ public class PersonalAnalisesActivity extends AppCompatActivity
         ((DiscreteSeekBar) findViewById(R.id.intr_extr_assertiveness)).setProgress((int)(children.get(1).getPercentage()*100));
         ((DiscreteSeekBar) findViewById(R.id.intr_extr_cheerfulness)).setProgress((int)(children.get(2).getPercentage()*100));
         ((DiscreteSeekBar) findViewById(R.id.intr_extr_excitement_seeking)).setProgress((int)(children.get(3).getPercentage()*100));
-        ((DiscreteSeekBar) findViewById(R.id.intr_extr_gregariousness)).setProgress((int)(children.get(5).getPercentage()*100));
+        ((DiscreteSeekBar) findViewById(R.id.intr_extr_gregariousness)).setProgress((int)(children.get(4).getPercentage()*100));
     }
     private void initAgreeabl(Trait openinness)
     {
@@ -200,8 +199,8 @@ public class PersonalAnalisesActivity extends AppCompatActivity
         ((DiscreteSeekBar) findViewById(R.id.agreeabl_altruism)).setProgress((int)(children.get(0).getPercentage()*100));
         ((DiscreteSeekBar) findViewById(R.id.agreeabl_cooperation)).setProgress((int)(children.get(1).getPercentage()*100));
         ((DiscreteSeekBar) findViewById(R.id.agreeabl_modesty)).setProgress((int)(children.get(2).getPercentage()*100));
-        ((DiscreteSeekBar) findViewById(R.id.agreeabl_sympath)).setProgress((int)(children.get(4).getPercentage()*100));
-        ((DiscreteSeekBar) findViewById(R.id.agreeabl_trust)).setProgress((int)(children.get(5).getPercentage()*100));
+        ((DiscreteSeekBar) findViewById(R.id.agreeabl_sympath)).setProgress((int)(children.get(3).getPercentage()*100));
+        ((DiscreteSeekBar) findViewById(R.id.agreeabl_trust)).setProgress((int)(children.get(4).getPercentage()*100));
     }
 
 }
